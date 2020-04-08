@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- these file linked online for using some icon in web page and taken from bootstrap website  -->
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="indexpagecss.css">
+	<title>Rent Your Car Here</title>
+</head>
+<body>
+		       <!-- coding of menu bar start here -->
+<div class="nav-bar" >
+    <img id="logo" src="logo2.jpg">
+	  <ul>
+	    <li><a href="register.html">SignUp</a></li>
+		<li><a href="login.html"> Login</a></li>
+		<li><a href="Manage Booking.html">Manage Booking</a></li>
+		<li><a href="popularloc.html">Popular Locations </a></li>
+		<li><a href="contact.html">Contact us</a></li>
+        </ul>
+</div>
+                 <!-- from here html coding of image slider div start -->
+<div class="slider">
+    <div id="img">
+      <img src="e.jpg">
+    </div>
+
+  </div>
+  <!-- from here javascript coding of image slider div start -->
+ <script>
+    var images = ['a.jpg','b.jpg', 'c.jpg', 'd.jpg', 'e.jpg'];
+    var x = 0;
+    var imgs = document.getElementById('img');
+    setInterval(slider, 2000);
+    function slider() {
+      if (x < images.length) {
+        x = x + 1;
+      } else {
+        x = 1;
+      }
+      imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+    }
+  </script>
+          <!-- from here html coding of search for car div start -->
+<div class="myc1">
+	<script src="selectjscode.js" type="text/javascript"></script>
+	<form>
+		<fieldset>
+			<h3 align="center" >Search for Car</h3>
+	<input type="text" class="mysearch" name="" placeholder="Search">
+<button id="btn-search" onclick=" search_valid()"><i class="fas fa-search"></i></button>
+<p id="search-para"></p>
+<h5>Pickup location:</h5>
+<select id="select" required>
+	<option id="put"></option>
+<option>Bangalore</option>
+<option>Chennai</option>
+<option>Kolkata</option>
+<option>Delhi</option>
+<option>Chandigrah</option>
+<option>Jaipur</option>
+<option>Kerala</option>
+<option>Lucknow</option>
+<option>Gova</option>
+<option>Manali</option>
+<option>Agra</option>
+<option>Shimla</option>
+<option>Amritsar</option>
+<option>Srinagar</option>
+<option>Mumbai</option>
+</select>
+<input type="reset" name="">
+<h5>PICK-UP DATE</h5>
+<input type="date"  name="">
+<input type="time" name="">
+<h5>DROP-OFF DATE</h5>
+<input type="date"  name="">
+<input type="time"  name="">
+</fieldset>
+                <!-- from here popular location part coding start -->
+
+<fieldset id="pop-loc">
+	<h4>Our Most Popular Destination</h4>
+	<ul class="pop-list">
+<button class="select" > <li id="get1">Amritsar</li>
+</button>
+		<button class="select">	<li id="get2" >Manali </li></button>
+			<button class="select" ><li id="get3">Shimla</li></button>
+			<button class="select" ><li id="get4">Delhi</li></button>
+			<button class="select"><li id="get5">Agra</li></button>
+			<button class="select" ><li id="get6">Laddakh</li></button>
+			<button class="select" ><li id="get7">Goa </li></button>
+			<button class="select"><li id="get8" >Mumbai </li></button>
+			<button class="select" ><li id="get9">Lucknow</li></button>
+			<button class="select" ><li id="get10">Agra</li></button>
+			<button class="select" ><li id="get11">Delhi</li></button>
+			<button class="select" ><li id="get12">Kolkata</li></button></ul>
+</fieldset>
+</form>
+</div>
+          <!-- from here content div started which is 3rd div in page -->
+<div class="content">
+	<h1>Frequently Asked Questions</h1>
+	<table width="100%">
+		<tr><td colspan="3"> <h2>How old do I need to be to rent a car?</h2>
+		<p>With many rental companies, you must be at least 21 years of age to rent a car, and any driver under 25 may have to pay a Young Driver Fee. Similarly, people aged 70+ may find some companies will charge a Senior Driver Fee, or may not rent to them at all.
+So car rental for the under-25s or over-70s can be more expensive – which is one more reason to book with Rentalcars.com, as we work with all the big brands. Just check each car’s terms and conditions to see if your age would make any difference.</p></td>
+		 <td colspan="3"><h2>Do I need rental car insurance – and what is ‘CDW’ anyway?</h2> <p>Before you buy any car rental insurance, you should find out what coverage is provided by your credit card company, your homeowner’s / renter’s policy, and your own car insurance. This will help you decide what cover you need to buy while booking and picking up your car.
+CDW means ‘Collision Damage Waiver’; a type of cover that limits your liability for damage to certain parts of a rental car.</p></td> </tr>
+		<tr>
+			<td colspan="3"><h2>Can I book a one-way car rental?</h2>
+		<p>Yes. One-way car rental deals are quite common, as they give people even more freedom to explore and enjoy their rental. However, rental companies will often charge a One Way Fee (or ‘drop charge’) to cover the cost of returning the car to its original location. As the world’s biggest online car rental service, we can help you find a one-way rental car with a low Fee – or no Fee at all.</p>	</td>
+		<td colspan="3"><h2>How do I find the cheapest car rental deals?</h2>
+			<p>As the world’s biggest online car rental service, we specialize in finding the cheapest car rental deals from major brands such as Hertz, Avis, Alamo and Budget. Daily, weekly or monthly car rentals… just fill in our search form to compare deals from different companies – and find out how much you can save when you rent a car from us.</p>
+		</td>
+		</tr>
+<tr>
+<td colspan="6">	<p>Any questions? Just visit our <a href="">Help page</a>  or <a href="contact.html">Contact Us</a> </p> </td></tr>
+</table>
+</div>
+                    <!-- footer coding started here -->
+<div class="footer">
+	<h1 style="color:red;">Rentalcars.com</h1>
+<table width="100"><tr><td >	<ul>
+	    <li><a href="index.html">Home</a></li>
+	    <li><a href="register.html">SignUp</a></li>
+		<li><a href="login.html"> Login</a></li>
+		<li><a href="Manage Booking.html">Manage Booking</a></li>
+		<li><a href="popularloc.html">Popular Locations </a></li>
+		<li><a href="contact.html">Contact us</a></li>
+        </ul></td>
+        </tr></table>
+</div>
+</body>
+</html>

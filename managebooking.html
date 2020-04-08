@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head><style>
+body{background-color:lightblue;
+font-color:red;
+font-family: arial;
+}
+#signtable{color:red;
+font-color:blue;
+font-size:180%;
+border: 2px double red;
+margin:20px;
+padding:30px;
+font-family:sans-serif;
+box-shadow:inset 0px 0px 30px 20px red,
+inset 0px 0px 30px 20px green,
+inset 0px 0px 30px 20px blue,
+inset 0px 0px 30px 20px yellow,
+inset 0px 0px 30px 20px orange,
+inset 0px 0px 30px 20px purple,
+inset 0px 0px 30px 20px powderblue;
+background-color:white;
+}
+center{
+font-size:300%;
+font-family:verdana;
+border:3px double purple;
+box-fill:purple;
+padding:30px;
+box-shadow:inset 0px 0px 30px 20px pink,
+           inset 0px 0px 30px 20px yellow,
+           inset 0px 0px 30px 20px grey;
+background-color:white;
+opacity: .8;
+}
+#myform{
+	margin-left: 250px;
+}
+                   /* for footer li tag css*/
+li a{
+	text-decoration: none;
+}
+                      /* this is footer CSS part */
+.footer{
+
+background-color: lightpink;
+width:100%;
+height: 300px;
+border: 2px solid black;
+margin-top: 10px;
+margin-bottom: 10px;
+font-family: sans-serif;
+font-size: 15px;
+}
+
+</style>
+<title>MANAGE BOOKING</title>
+</head>
+<body>
+<rect width="100" height="80" fill="grey">
+<animate attributename="y" from="0" to="30" dur="6s" fill="freeze" 
+repeatcount="40"/>
+</rect>
+<center><marquee> Let's find your ideal car</marquee></center>
+<form id="myform">
+<table id="signtable" height="450" width="800">
+<tr>
+<td id="p1">
+<b>Pickup location:</b>
+<select>
+<option>Bangalore</option>
+<option>Chennai</option>
+<option>Kolkata</option>
+<option>Delhi</option>
+<option>Punjab</option>
+<option>Rajasthan</option>
+<option>Kerala</option>
+<option>Jharkhand</option>
+<option>Chattisgarh</option>
+<option>Uttarakhand</option>
+<option>Uttar Pradesh</option>
+<option>Bihar</option>
+<option>Haryana</option>
+<option>Jammu & Kashmir</option>
+<option>Maharashtra</option>
+</td>
+</tr>
+<tr>
+<td id="p1">
+<b>Pickup date:</b>   
+<input type="date">
+</td>
+<td id="p1">
+<b>Dropoff date:</b>
+<input type="date">
+</td>
+</tr><tr><td id="p1">
+</select>
+<b>Purpose of Rental:</b><br>
+<input type="radio" name="Purpose" value="Business">Business
+<input type="radio" name="Purpose" value="Leisure">Leisure
+</td></tr>
+<tr>
+<td id="p1">
+<b>Timings for Pickup:</b>
+<input type="time"><br>
+<b>Timings for Dropoff:</b>
+<input type="time"></td></tr>
+<tr><td id>
+<input type="button" value="search"></td></tr>
+</table>
+</form>
+                    <!-- this is footer html coding part -->
+<div class="footer">
+	<h1 style="color:red;">Rentalcars.com</h1>
+<table width="100"><tr><td >	<ul>
+	<li><a href="index.html">Home</a></li>
+	    <li><a href="register.html">SignUp</a></li>
+		<li><a href=""> Login</a></li>
+		<li><a href="Manage Booking.html">Manage Booking</a></li>
+		<li><a href="popularloc.html">Popular Locations </a></li>
+		<li><a href="contact.html">Contact us</a></li>
+        </ul></td>
+        </tr></table>
+</div>
+
+</body>
+</html>
